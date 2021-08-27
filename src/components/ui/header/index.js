@@ -20,7 +20,9 @@ import {
 
 const Header = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false)
-  const [isOnTop, setIsOnTop] = useState(true)
+  const [isOnTop, setIsOnTop] = useState(
+    window.pageYOffset < window.screen.height
+  )
   const { language, languages, originalPath } = useI18next()
   const { t } = useTranslation()
 
