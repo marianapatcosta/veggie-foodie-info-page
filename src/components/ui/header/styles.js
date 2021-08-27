@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Scrollspy from "react-scrollspy"
-import ToggleThemeButton from "../toggle-theme-button"
 import { Link } from "gatsby-plugin-react-i18next"
+import ToggleThemeButton from "../toggle-theme-button"
 
 export const StyledHeader = styled.header`
   position: fixed;
@@ -12,8 +12,8 @@ export const StyledHeader = styled.header`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.primary};
-  box-shadow: 0 0.063rem 0.5rem ${({ theme }) => theme.colors.shadow};
+  background-color: ${({ theme }) => theme.colors.transparent};
+  box-shadow: none;
   z-index: 10;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -21,10 +21,10 @@ export const StyledHeader = styled.header`
   user-select: none;
 
   ${({ isOnTop, theme }) =>
-    isOnTop &&
-    `background-color: ${theme.colors.transparent};
-    box-shadow: none;
-    color: ${theme.colors.primary};`}
+    !isOnTop &&
+    `background-color: ${theme.colors.primary};
+    box-shadow: 0.063rem 0.5rem ${({ theme }) => theme.colors.shadow};
+  `}
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xm}) {
     padding: 0 2rem;
@@ -106,8 +106,8 @@ export const StyledNavBarLink = styled(AnchorLink)`
   padding: 0.2rem 0;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.secondary};
-    border-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.hover};
+    border-color: ${({ theme }) => theme.colors.hover};
   }
 `
 
@@ -129,8 +129,8 @@ export const StyledLanguage = styled(Link)`
     $isCurrentLanguage && `pointer-events: none; opacity: 0.5;`}
 
   &:hover {
-    color: ${({ theme }) => theme.colors.secondary};
-    border-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.hover};
+    border-color: ${({ theme }) => theme.colors.hover};
     font-weight: 700;
   }
 

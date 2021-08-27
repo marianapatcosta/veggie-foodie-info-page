@@ -7,7 +7,6 @@ const typeClass = (type, colors) => {
     success: colors.green,
     warning: colors.yellow,
   }
-  console.log(666, toastTypesClasses[type] || colors.blue)
   return toastTypesClasses[type] || colors.blue
 }
 
