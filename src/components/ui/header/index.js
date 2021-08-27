@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
-import { navigate } from "gatsby"
 import { useI18next, useTranslation } from "gatsby-plugin-react-i18next"
 import { Logo } from "../../../images"
 import "./styles.css"
@@ -21,7 +20,7 @@ import {
 
 const Header = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false)
-  const [isOnTop, setIsOnTop] = useState(false)
+  const [isOnTop, setIsOnTop] = useState(true)
   const { language, languages, originalPath } = useI18next()
   const { t } = useTranslation()
 
@@ -29,8 +28,7 @@ const Header = () => {
     const handleScroll = () =>
       setIsOnTop(window.pageYOffset < window.screen.height)
 
-    if (!!window && window.location.pathname === "/") {
-      setIsOnTop(true)
+    if (!!window) {
       window.addEventListener("scroll", handleScroll)
     }
     return () => window.removeEventListener("scroll", handleScroll)
@@ -40,7 +38,6 @@ const Header = () => {
     setIsMenuOpened(prevIsMenuOpened => !prevIsMenuOpened)
 
   const scrollToTop = () => {
-    window.location.pathname !== "/" && navigate("/")
     document.documentElement.scrollTop = 0
     document.body.scrollTop = 0
   }
@@ -93,18 +90,19 @@ const Header = () => {
 
 const NavBar = ({ isOnTop }) => {
   const { t } = useTranslation()
+  const { defaultLanguage, language } = useI18next()
   const navLinks = [
     {
       label: t("about"),
-      url: "/#about",
+      url: `/${defaultLanguage !== language ? `${language}/` : ""}#about`,
     },
     {
       label: t("privacyPolicy"),
-      url: "/#privacy",
+      url: `/${defaultLanguage !== language ? `${language}/` : ""}#privacy`,
     },
     {
       label: t("contacts"),
-      url: "/#contacts",
+      url: `/${defaultLanguage !== language ? `${language}/` : ""}#contacts`,
     },
   ]
   return (

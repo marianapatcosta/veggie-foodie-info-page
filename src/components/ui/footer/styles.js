@@ -49,7 +49,7 @@ export const StyledLink = styled.a`
   }
 
   &:hover img {
-    filter: ${({ theme }) => theme.colors.iconSecondary};
+    filter: ${({ theme }) => theme.colors.iconHover};
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
