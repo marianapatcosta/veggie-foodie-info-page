@@ -47,6 +47,12 @@ const ContactForm = ({ setToastInfo }) => {
   const { t } = useTranslation()
 
   const onSubmit = async data => {
+    console.log(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      templateParams,
+      process.env.REACT_APP_USER_ID
+    )
     try {
       const templateParams = {
         name: data.name,
@@ -54,6 +60,8 @@ const ContactForm = ({ setToastInfo }) => {
         subject: data.subject,
         message: data.message,
       }
+      console.log(4444, templateParams)
+
       const emailjs = await import("emailjs-com")
       await emailjs.send(
         process.env.REACT_APP_SERVICE_ID,
@@ -61,12 +69,14 @@ const ContactForm = ({ setToastInfo }) => {
         templateParams,
         process.env.REACT_APP_USER_ID
       )
+      console.log(111111)
       setToastInfo({
         message: t("sendEmailSuccess"),
         type: TOAST_TYPES.SUCCESS,
       })
       reset()
     } catch (error) {
+      console.log({ error })
       setToastInfo({
         message: t("sendEmailError"),
         type: TOAST_TYPES.ALERT,
