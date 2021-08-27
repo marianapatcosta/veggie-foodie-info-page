@@ -5,7 +5,7 @@
   "contacts": "Contacts",
   "contactsMessage": "Send a message with any questions, doubts, suggestions or comments you have about Veggie Foodie!",
   "description": "Veggie Foodie is a mobile app that helps you to keep track of your favorite vegetarian/vegan meals, recipes and products. Available in english and portuguese. Here are some of the available functionalities:",
-  "designedAndDeveloped": "Designed and developed by {{authorName}}",
+  "designedAndDeveloped": "©Designed and developed by {{authorName}}",
   "email": "Email",
   "emailErrorMessage": "Please enter a valid email.",
   "emailRequiredMessage": "Please enter your email.",

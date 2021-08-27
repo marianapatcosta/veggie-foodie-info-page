@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.colors.primary};
   box-sizing: border-box;
   position: relative;
-  font-size: 85%;
+  font-size: 95%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ export const StyledFooter = styled.footer`
   }
 `
 
-export const StyledLinks = styled.div`
+export const StyledLinks = styled.address`
   margin-left: auto;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
