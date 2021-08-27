@@ -12,8 +12,6 @@ export const StyledHeader = styled.header`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.transparent};
-  box-shadow: none;
   z-index: 10;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -21,10 +19,12 @@ export const StyledHeader = styled.header`
   user-select: none;
 
   ${({ isOnTop, theme }) =>
-    !isOnTop &&
-    `background-color: ${theme.colors.primary};
-    box-shadow: 0.063rem 0.5rem ${({ theme }) => theme.colors.shadow};
-  `}
+    !isOnTop
+      ? `background-color: ${theme.colors.primary};
+    box-shadow: 0 0.063rem 0.5rem ${theme.colors.shadow};
+  `
+      : ` background-color: ${theme.colors.transparent};
+    box-shadow: none;`}
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xm}) {
     padding: 0 2rem;
