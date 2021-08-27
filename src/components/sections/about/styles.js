@@ -4,7 +4,6 @@ import { StyledSection } from "../../../themes/global-style"
 export const StyledAbout = styled(StyledSection)`
   box-shadow: inset 0 -0.5rem 0.7rem -0.5rem
     ${({ theme }) => theme.colors.shadow};
-
   display: flex;
   flex-direction: column;
 `
