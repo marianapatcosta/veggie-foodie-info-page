@@ -36,7 +36,6 @@ Textarea.defaultProps = {
   placeholder: '',
   errorText: '',
   maxLength: 500,
-  rows: '6',
   onChange: () => null,
   onBlur: () => null,
 }

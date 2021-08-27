@@ -18,8 +18,8 @@ export const StyledTextarea = styled.textarea`
   position: relative;
   min-width: 100%;
   max-width: 100%;
-  min-height: 13rem;
-  max-height: 26rem;
+  min-height: 7rem;
+  max-height: 15rem;
   font: inherit;
 
   :focus {
@@ -50,6 +50,10 @@ export const StyledTextarea = styled.textarea`
   ${({ errorText, theme }) =>
     `border-color: ${errorText ? theme.colors.red : ""};
     `}
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    width: 12rem;
+  }
 `
 
 export const StyledLabel = styled.label`
@@ -61,6 +65,6 @@ export const StyledLabel = styled.label`
 
 export const StyledTextareaError = styled.p`
   color: ${({ theme }) => theme.colors.red};
-  font-size: 95%;
-  margin-top: 0.3rem;
+  min-height: 13rem;
+  max-height: 26rem;
 `
