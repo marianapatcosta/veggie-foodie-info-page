@@ -50,7 +50,6 @@ const ContactForm = ({ setToastInfo }) => {
     console.log(
       process.env.REACT_APP_SERVICE_ID,
       process.env.REACT_APP_TEMPLATE_ID,
-      templateParams,
       process.env.REACT_APP_USER_ID
     )
     try {
