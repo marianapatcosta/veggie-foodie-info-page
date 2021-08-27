@@ -40,9 +40,7 @@ const Footer = () => {
           </StyledLink>
         ))}
       </StyledLinks>
-      <p>{`©${new Date().getFullYear()} - ${t("designedAndDeveloped", {
-        authorName: site.siteMetadata.authorName,
-      })}`}</p>
+      <p>{`${new Date().getFullYear()} © ${site.siteMetadata.authorName}`}</p>
     </StyledFooter>
   )
 }
