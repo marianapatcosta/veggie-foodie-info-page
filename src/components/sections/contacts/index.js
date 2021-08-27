@@ -59,7 +59,13 @@ const ContactForm = ({ setToastInfo }) => {
         subject: data.subject,
         message: data.message,
       }
-      console.log(4444, templateParams)
+      console.log(
+        4444,
+        templateParams,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_USER_ID
+      )
 
       const emailjs = await import("emailjs-com")
       await emailjs.send(
