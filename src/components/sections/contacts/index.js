@@ -48,9 +48,9 @@ const ContactForm = ({ setToastInfo }) => {
 
   const onSubmit = async data => {
     console.log(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      process.env.REACT_APP_USER_ID
+      process.env.GATSBY_SERVICE_ID,
+      process.env.GATSBY_TEMPLATE_ID,
+      process.env.GATSBY_USER_ID
     )
     try {
       const templateParams = {
@@ -62,17 +62,17 @@ const ContactForm = ({ setToastInfo }) => {
       console.log(
         4444,
         templateParams,
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        process.env.REACT_APP_USER_ID
+        process.env.GATSBY_SERVICE_ID,
+        process.env.GATSBY_TEMPLATE_ID,
+        process.env.GATSBY_USER_ID
       )
 
       const emailjs = await import("emailjs-com")
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.GATSBY_SERVICE_ID,
+        process.env.GATSBY_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_ID
+        process.env.GATSBY_USER_ID
       )
       console.log(111111)
       setToastInfo({
