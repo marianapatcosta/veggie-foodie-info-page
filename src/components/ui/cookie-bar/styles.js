@@ -1,17 +1,16 @@
 import styled from "styled-components"
 
 export const StyledCookieConsentWrapper = styled.div`
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 10;
-  background: ${({ theme }) => theme.colors.secondary};
-  padding: 1.5rem 2rem;
-  box-shadow: 0 -0.063rem 0.5rem ${({ theme }) => theme.colors.shadow};
-  box-sizing: border-box;
-
   .CookieConsent {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    background: ${({ theme }) => theme.colors.secondary};
+    padding: 1.5rem 2rem;
+    box-shadow: 0 -0.063rem 0.5rem ${({ theme }) => theme.colors.shadow};
+    box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
     color: ${({ theme }) => theme.colors.white};
