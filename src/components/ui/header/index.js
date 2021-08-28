@@ -26,7 +26,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () =>
-      setIsOnTop(window.pageYOffset < window.screen.height)
+      setIsOnTop(window.pageYOffset < window.screen.height * 0.3)
 
     if (!!window) {
       window.addEventListener("scroll", handleScroll)
