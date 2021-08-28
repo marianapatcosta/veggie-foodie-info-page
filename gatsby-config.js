@@ -56,9 +56,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          /* "gatsby-remark-external-links" */
-        ],
+        plugins: [],
       },
     },
     `gatsby-transformer-sharp`,
@@ -80,6 +78,18 @@ module.exports = {
       options: {
         fonts: [`benne`],
         display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: "G-RMGEYTMRL4",
+          cookieName: "gatsby-gdpr-google-analytics",
+          anonymize: true,
+          allowAdFeatures: false,
+        },
+        environments: ["production", "development"],
       },
     },
     `gatsby-plugin-gatsby-cloud`,

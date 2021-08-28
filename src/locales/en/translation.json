@@ -1,9 +1,12 @@
 {
   "about": "About",
   "aboutVeggieFoodie": "About Veggie Foodie",
+  "accept": "Accept",
   "addItems": "Add your meals, recipes and products.",
   "contacts": "Contacts",
   "contactsMessage": "Send a message with any questions, doubts, suggestions or comments you have about Veggie Foodie!",
+  "cookiesText": "This website uses cookies 🍪. \nThese cookies are stored in your browser and exclusively used to collect information about how you interact with this website. This information is exclusively used to improve and customize your browsing experience and for metrics about this website's visitors. \nIf you decline, your information will not be tracked in this website and a cookie will be stored in your browser to register your preferences.",
+  "decline": "Decline",
   "description": "Veggie Foodie is a mobile app that helps you to keep track of your favorite vegetarian/vegan meals, recipes and products. Available in english and portuguese. Here are some of the available functionalities:",
   "designedAndDeveloped": "©Designed and developed by {{authorName}}",
   "email": "Email",
