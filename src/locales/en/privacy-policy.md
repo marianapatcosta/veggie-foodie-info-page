@@ -3,7 +3,7 @@ title: Privacy Policy
 language: en
 ---
 
-Last updated: August 27, 2021
+Last update: August 27, 2021
 
 **_Veggie Foodie_ does not upload, store, use or share any of your data.**
 The application _Veggie Foodie_ neither collects any data nor implies any data collection by third parties or intermediaries. Any data you provide during the usage of _Veggie Foodie_ (including photos, location or any other information) will be strictly stored in the internal storage of your device. The data stored in internal device storage are containerized, i. e. stored with access restricted to this application, and cannot be accessed by other apps installed on the device. When _Veggie Foodie_ is uninstalled, all the app-related data are removed.

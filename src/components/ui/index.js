@@ -1,4 +1,5 @@
 import Button from "./button"
+import CookieBar from "./cookie-bar"
 import Footer from "./footer"
 import GifImage from "./gif-image"
 import GooglePlayButton from "./google-play-button"
@@ -13,6 +14,7 @@ import ToggleThemeButton from "./toggle-theme-button"
 
 export {
   Button,
+  CookieBar,
   Footer,
   GifImage,
   GooglePlayButton,

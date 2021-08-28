@@ -1,9 +1,12 @@
 {
   "about": "Sobre",
   "aboutVeggieFoodie": "Sobre Veggie Foodie",
+  "accept": "Aceitar",
   "addItems": "Adicione as suas refeiçõeS, receitas e productos.",
   "contacts": "Contactos",
   "contactsMessage": "Envie uma mensagem com quaisquer questões, dúvidas, sugestões ou comentários que tenha sobre a Veggie Foodie!",
+  "cookiesText": "Este website utiliza cookies 🍪. \nEstes cookies são guardados no seu browser com o único propósito de recolher informação sobre a forma como interage com este website. Esta informação é exclusivamente utilizada para melhoria e personalização da sua experiência de navegação e para métricas sobre as visitas deste website. \n \nSe rejeitar, a sua informação não será acompanhada neste site e um cookie será guardado no seu browser para registar a sua preferência.",
+  "decline": "Rejeitar",
   "designedAndDeveloped": "Concebido e desenvolvido por {{authorName}}",
   "description": "Veggie Foodie é uma aplicação para smartphone que ajuda a manter o registo das suas refeições, receitas e productos vegetarianos/vegan favoritos. Disponível em português e inglês. Aqui estão algumas das funcionalidades disponíveis:",
   "email": "Email",
