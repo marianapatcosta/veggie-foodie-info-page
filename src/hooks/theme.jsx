@@ -17,14 +17,14 @@ const ThemeContextProvider = ({ children }) => {
     !!isStoredThemeDark && setIsDarkTheme(JSON.parse(isStoredThemeDark))
   }
 
-  const toggleTheme = () => setIsDarkTheme(prevIsDarkTheme => !prevIsDarkTheme)
+  const toggleTheme = () => {
+    setIsDarkTheme(!isDarkTheme)
+    localStorage.setItem("darkTheme", !isDarkTheme)
+  }
+
   useEffect(() => {
     getStoredTheme()
   }, [])
-
-  useEffect(() => {
-    localStorage.setItem("darkTheme", isDarkTheme)
-  }, [isDarkTheme])
 
   return (
     <ThemeContext.Provider value={{ toggleTheme, isDarkTheme }}>
