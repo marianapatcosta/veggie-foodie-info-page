@@ -1,11 +1,13 @@
 import React from "react"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import CookieConsent from "react-cookie-consent"
-import { StyledCookieConsentWrapper,  } from "./styles"
+import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
+import { useLocation } from "@reach/router"
+import { StyledCookieConsentWrapper } from "./styles"
 
 const GooglePlayButton = () => {
   const { t } = useTranslation()
-
+  const location = useLocation()
   return (
     <StyledCookieConsentWrapper>
       <CookieConsent
@@ -16,6 +18,7 @@ const GooglePlayButton = () => {
         flipButtons={true}
         cookieName="gatsby-gdpr-google-analytics"
         disableStyles={true}
+        onAccept={() => initializeAndTrack(location)}
       >
         {t("cookiesText")}
       </CookieConsent>
