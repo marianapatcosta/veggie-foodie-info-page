@@ -5,7 +5,7 @@ import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 import { useLocation } from "@reach/router"
 import { StyledCookieConsentWrapper } from "./styles"
 
-const GooglePlayButton = () => {
+const CookieBar = () => {
   const { t } = useTranslation()
   const location = useLocation()
   return (
@@ -26,4 +26,4 @@ const GooglePlayButton = () => {
   )
 }
 
-export default GooglePlayButton
+export default CookieBar
