@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledImageContent = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto 2rem;
+  margin: 0 auto 3rem;
   width: 12.5rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {

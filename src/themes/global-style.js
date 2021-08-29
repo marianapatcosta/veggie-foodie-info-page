@@ -67,10 +67,11 @@ export const StyledSectionTitle = styled.h2`
   font-size: 200%;
   color: ${({ theme }) => theme.colors.title};
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 `

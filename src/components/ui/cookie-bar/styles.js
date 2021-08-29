@@ -50,8 +50,8 @@ export const StyledCookieConsentWrapper = styled.div`
 
   .CookieConsent button {
     font: inherit;
-    width: 6rem;
-    height: 2.5rem;
+    width: 5rem;
+    height: 2rem;
     text-decoration: none;
     padding: 1rem;
     margin: 0 1rem 0 0;
@@ -66,6 +66,11 @@ export const StyledCookieConsentWrapper = styled.div`
     cursor: pointer;
     box-shadow: 0 0.3rem 0.05rem ${({ theme }) => theme.colors.buttonShadow};
 
+    @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+      width: 6rem;
+      height: 2.5rem;
+    }
+
     :active {
       box-shadow: 0 0.15rem 0.05rem ${({ theme }) => theme.colors.buttonShadow};
       transform: translateY(0.15rem);
@@ -74,6 +79,7 @@ export const StyledCookieConsentWrapper = styled.div`
       -ms-transform: translateY(0.15rem);
       -o-transform: translateY(0.15rem);
     }
+
     :hover {
       opacity: 80%;
     }

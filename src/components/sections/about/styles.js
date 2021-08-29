@@ -50,8 +50,12 @@ export const StyledLinkWrapper = styled.div`
 
   p {
     color: ${({ theme }) => theme.colors.title};
-    font-size: 150%;
+    font-size: 125%;
     font-weight: 700;
     margin-left: 1rem;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+      font-size: 150%;
+    }
   }
 `
