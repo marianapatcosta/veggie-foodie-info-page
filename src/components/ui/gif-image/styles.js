@@ -49,7 +49,6 @@ export const StyledImageWrapper = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     width: 15rem;
     height: 30.5rem;
-    margin: revert;
   }
 `
 

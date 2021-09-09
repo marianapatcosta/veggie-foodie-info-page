@@ -15,7 +15,7 @@ export const StyledHeader = styled.header`
   z-index: 10;
   padding: 0 1rem;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
+  transition: all 0s ease-in-out;
   user-select: none;
 
   ${({ isOnTop, theme }) =>
