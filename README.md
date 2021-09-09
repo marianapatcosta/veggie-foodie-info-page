@@ -4,6 +4,12 @@ Veggie Foodie info page is a web page to give information about functionalities 
 
 ![veggie-foodie-overview](https://user-images.githubusercontent.com/43031902/131195954-dec1be4d-2f47-49f6-9a16-da05a95d503b.png)
 
+
+The following environnement variable must be configured:
+- GATSBY_SERVICE_ID
+- GATSBY_TEMPLATE_ID
+- GATSBY_USER_ID
+
 ## Available Scripts
 
 In the project directory, you can run:
