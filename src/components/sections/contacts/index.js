@@ -47,11 +47,6 @@ const ContactForm = ({ setToastInfo }) => {
   const { t } = useTranslation()
 
   const onSubmit = async data => {
-    console.log(
-      process.env.GATSBY_SERVICE_ID,
-      process.env.GATSBY_TEMPLATE_ID,
-      process.env.GATSBY_USER_ID
-    )
     try {
       const templateParams = {
         name: data.name,
